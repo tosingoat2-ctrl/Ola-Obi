@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLA OBI BLOCK INDUSTRY | Quality Blocks for Construction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary: #2c3e50;
+            --secondary: #e74c3c;
+            --accent: #3498db;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --gray: #95a5a6;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .logo-part {
+            display: inline-block;
+            position: relative;
+        }
+
+        .logo-part.ola, .logo-part.obi {
+            color: #f39c12;
+        }
+
+        .logo-part.block {
+            color: var(--light);
+        }
+
+        .logo-part.industry {
+            color: var(--secondary);
+        }
+
+        /* Navigation */
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #f39c12;
+            transition: width 0.3s;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Mobile Dropdown */
+        .mobile-dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: var(--primary);
+            z-index: 999;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .mobile-dropdown.active {
+            display: block;
+        }
+
+        .mobile-dropdown ul {
+            flex-direction: column;
+            padding: 15px 0;
+        }
+
+        .mobile-dropdown ul li {
+            margin: 0;
+            text-align: center;
+        }
+
+        .mobile-dropdown ul li a {
+            display: block;
+            padding: 12px 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .mobile-dropdown ul li:last-child a {
+            border-bottom: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Jquery/hand-made-bricks-wet-clay-mud-kept-drying-burning-process-traditional-production-india-229529075.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            animation: fadeInUp 1s ease 0.3s both;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            animation: fadeInUp 1s ease 0.6s both;
+        }
+
+        .btn:hover {
+            background-color: #c0392b;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .tpt{
+            text-decoration: none;
+        }
+        /* Products Section */
+        .section-title {
+            text-align: center;
+            margin: 60px 0 40px;
+            position: relative;
+        }
+
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: var(--primary);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary);
+        }
+
+        /* Enhanced Product Cards */
+        .products-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 430px; /* Perfect height */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-img {
+            height: 180px; /* Perfect height */
+            overflow: hidden;
+            position: relative;
+        }
+
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .product-card:hover .product-img img {
+            transform: scale(1.05);
+        }
+
+        .product-info {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-title {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        .product-description {
+            color: var(--gray);
+            margin-bottom: 15px;
+            flex-grow: 1;
+        }
+
+        .price {
+            font-weight: 700;
+            color: var(--secondary);
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        /* Enhanced Quantity Controls */
+        .quantity-control {
+            display: flex;
+            align-items: center;
+            margin: 10px 0 15px;
+        }
+
+        .quantity-btn {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: var(--accent);
+            color: white;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .quantity-btn:hover {
+            background-color: #2980b9;
+        }
+
+        .quantity-input {
+            width: 60px;
+            text-align: center;
+            margin: 0 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 8px;
+            font-weight: 600;
+        }
+
+        /* Enhanced Add to Cart Button */
+        .btn-add-to-cart {
+            background-color: var(--secondary);
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: all 0.3s;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .btn-add-to-cart:hover {
+            background-color: #c0392b;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-add-to-cart:active {
+            transform: translateY(0);
+        }
+
+        .btn-add-to-cart i {
+            transition: transform 0.3s;
+        }
+
+        .btn-add-to-cart:hover i {
+            transform: translateX(3px);
+        }
+
+        /* Enhanced Cart Sidebar */
+        .cart-sidebar {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            position: sticky;
+            top: 100px;
+            border: 1px solid #eee;
+            height: fit-content;
+        }
+
+        .cart-sidebar h3 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cart-sidebar h3 i {
+            color: var(--accent);
+        }
+
+        .cart-items {
+            margin-bottom: 20px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            transition: background-color 0.2s;
+        }
+
+        .cart-item:hover {
+            background-color: rgba(0, 0, 0, 0.02);
+            border-radius: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .cart-item:last-child {
+            border-bottom: none;
+        }
+
+        .item-details h6 {
+            margin: 0;
+            font-size: 1rem;
+            color: var(--primary);
+        }
+
+        .item-details small {
+            color: var(--gray);
+        }
+
+        .cart-total {
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: var(--secondary);
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 2px solid #eee;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Enhanced Checkout Button */
+        .btn-checkout {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 5px;
+            font-weight: 600;
+            width: 100%;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .btn-checkout:hover {
+            background-color: #1a252f;
+        }
+
+        .btn-checkout:disabled {
+            background-color: #95a5a6;
+            cursor: not-allowed;
+        }
+
+        .btn-checkout:disabled:hover {
+            background-color: #95a5a6;
+        }
+
+        /* Enhanced Empty Cart State */
+        .empty-cart-state {
+            text-align: center;
+            padding: 30px 0;
+            color: var(--gray);
+        }
+
+        .empty-cart-state i {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            color: #ddd;
+        }
+
+        .empty-cart-state p {
+            margin: 0;
+        }
+
+        /* Remove Item Button */
+        .remove-item {
+            background: none;
+            border: none;
+            color: var(--secondary);
+            cursor: pointer;
+            transition: color 0.2s;
+            padding: 5px;
+            border-radius: 3px;
+        }
+
+        .remove-item:hover {
+            color: #c0392b;
+            background-color: rgba(231, 76, 60, 0.1);
+        }
+
+        /* Enhanced Success Modal */
+        .alert-success-custom {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            z-index: 1050;
+            max-width: 90%;
+            width: 400px;
+            animation: popIn 0.5s forwards;
+            border-top: 5px solid #2ecc71;
+        }
+
+        @keyframes popIn {
+            0% {
+                transform: translate(-50%, -50%) scale(0);
+                opacity: 0;
+            }
+            70% {
+                transform: translate(-50%, -50%) scale(1.1);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 1;
+            }
+        }
+
+        .success-icon {
+            font-size: 4rem;
+            color: #2ecc71;
+            margin-bottom: 20px;
+            animation: bounce 1s;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1040;
+            display: none;
+        }
+
+        /* About Section */
+        .about {
+            background-color: var(--light);
+            padding: 60px 0;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            margin-bottom: 15px;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 60px 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: var(--primary);
+            color: white;
+            padding: 60px 0;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .contact-info h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-details {
+            margin-bottom: 30px;
+        }
+
+        .contact-details p {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-details i {
+            margin-right: 10px;
+            color: #f39c12;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            background-color: #f39c12;
+            transform: translateY(-3px);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .contact-form textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .copyright {
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+
+        /* WhatsApp Button */
+        .fa-whatsapp {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            font-size: 55px;
+            color: green;
+            background-color: white;
+            border-radius: 50%;
+            background: transparent;
+            z-index: 100;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 992px) {
+            .products-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .cart-sidebar {
+                margin-top: 30px;
+                position: static;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 0;
+            }
+            
+            .header-content {
+                flex-direction: row;
+                text-align: left;
+            }
+
+            .logo {
+                margin-bottom: 0;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .about-content,
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .quantity-control {
+                justify-content: flex-start;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 60px 0;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+            
+            .product-card {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="#" class="logo-text">
+                        <span class="logo-part ola">OLA</span>
+                        <span class="logo-part obi">OBI</span>
+                        <span class="logo-part block">BLOCK</span>
+                        <span class="logo-part industry">INDUSTRY</span>
+                    </a>
+                </div>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav class="tpt">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+        <!-- Mobile Dropdown -->
+        <div class="mobile-dropdown" id="mobileDropdown">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Quality Blocks for Your Construction Needs</h1>
+            <p>We provide high-quality concrete blocks, bricks, and construction materials at competitive prices. Trust OLA OBI BLOCK INDUSTRY for all your building projects.</p>
+            <a href="#products" class="btn">View Our Products</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Products</h2>
+            </div>
+            <div class="products-container">
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="/img/download.jpg" alt="Hollow Blocks">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Hollow Blocks</h3>
+                            <p class="product-description">High-quality hollow blocks perfect for construction walls and partitions.</p>
+                            <span class="price">₦350 each</span>
+                            <div class="quantity-control">
+                                <button class="quantity-btn minus" data-product="1">-</button>
+                                <input type="number" class="quantity-input" id="quantity-1" value="1" min="1">
+                                <button class="quantity-btn plus" data-product="1">+</button>
+                            </div>
+                            <button class="btn btn-add-to-cart" data-product="1" data-name="Hollow Blocks" data-price="350">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="/img/download (1).jpg" alt="Solid Blocks">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Solid Blocks</h3>
+                            <p class="product-description">Durable solid blocks for foundations and load-bearing walls.</p>
+                            <span class="price">₦450 each</span>
+                            <div class="quantity-control">
+                                <button class="quantity-btn minus" data-product="2">-</button>
+                                <input type="number" class="quantity-input" id="quantity-2" value="1" min="1">
+                                <button class="quantity-btn plus" data-product="2">+</button>
+                            </div>
+                            <button class="btn btn-add-to-cart" data-product="2" data-name="Solid Blocks" data-price="450">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="/img/download (2).jpg" alt="Interlocking Blocks">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Interlocking Blocks</h3>
+                            <p class="product-description">Innovative interlocking blocks for faster construction with less mortar.</p>
+                            <span class="price">₦550 each</span>
+                            <div class="quantity-control">
+                                <button class="quantity-btn minus" data-product="3">-</button>
+                                <input type="number" class="quantity-input" id="quantity-3" value="1" min="1">
+                                <button class="quantity-btn plus" data-product="3">+</button>
+                            </div>
+                            <button class="btn btn-add-to-cart" data-product="3" data-name="Interlocking Blocks" data-price="550">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="/img/images.jpg" alt="Paving Blocks">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Paving Blocks</h3>
+                            <p class="product-description">Decorative paving blocks for driveways, walkways, and outdoor spaces.</p>
+                            <span class="price">₦600 each</span>
+                            <div class="quantity-control">
+                                <button class="quantity-btn minus" data-product="4">-</button>
+                                <input type="number" class="quantity-input" id="quantity-4" value="1" min="1">
+                                <button class="quantity-btn plus" data-product="4">+</button>
+                            </div>
+                            <button class="btn btn-add-to-cart" data-product="4" data-name="Paving Blocks" data-price="600">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Enhanced Cart Sidebar -->
+                <div class="cart-sidebar">
+                    <h3><i class="fas fa-shopping-cart"></i> Your Cart</h3>
+                    <div class="cart-items" id="cart-items">
+                        <div class="empty-cart-state">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Your cart is empty</p>
+                        </div>
+                    </div>
+                    <div class="cart-total">
+                        <span>Total:</span>
+                        <span id="cart-total">₦0</span>
+                    </div>
+                    <button class="btn btn-checkout" id="checkout-btn" disabled>
+                        <i class="fas fa-credit-card"></i> Proceed to Checkout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About OLA OBI BLOCK INDUSTRY</h2>
+                    <p>With over 15 years of experience in the construction materials industry, OLA OBI BLOCK INDUSTRY has established itself as a trusted provider of high-quality concrete blocks and building materials.</p>
+                    <p>We use state-of-the-art manufacturing processes and quality control measures to ensure that every block we produce meets the highest standards of durability and strength.</p>
+                    <p>Our commitment to customer satisfaction and competitive pricing has made us the preferred choice for contractors, builders, and individual homeowners across the region.</p>
+                </div>
+                <div class="about-image">
+                    <img src="/OIP.webp" alt="Our Factory">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-truck-loading"></i>
+                    </div>
+                    <h3>Bulk Supply</h3>
+                    <p>We supply blocks in bulk quantities for large construction projects with timely delivery.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h3>Custom Orders</h3>
+                    <p>Need special sizes or specifications? We can manufacture blocks to meet your specific requirements.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Quantity Estimation</h3>
+                    <p>Our experts can help you estimate the quantity of blocks needed for your project.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Consultation</h3>
+                    <p>Free consultation on the best block types for your specific construction needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Contact Us</h2>
+                    <div class="contact-details">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Construction Avenue, Industrial Area</p>
+                        <p><i class="fas fa-phone"></i> +234 801 234 5678, +234 802 345 6789</p>
+                        <p><i class="fas fa-envelope"></i> info@olaobiblocks.com</p>
+                        <p><i class="fas fa-clock"></i> Mon - Sat: 8:00 AM - 6:00 PM</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="tel" placeholder="Your Phone">
+                        <textarea placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div class="overlay" id="overlay"></div>
+    <div class="alert-success-custom" id="success-alert" style="display: none;">
+        <div class="success-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <h3>Thank You!</h3>
+        <p>Your order has been placed successfully.</p>
+        <p class="patronage-message">Thanks for your patronage!</p>
+        <button class="btn btn-primary mt-3" id="close-alert">Continue Shopping</button>
+    </div>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/2348152708215?text=Hello am chatting to order blocks, my name is: " >
+        <span class="fab fa-whatsapp fa-bounce"></span>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">
+                    <a href="#" class="logo-text">
+                        <span class="logo-part ola">OLA</span>
+                        <span class="logo-part obi">OBI</span>
+                        <span class="logo-part block">BLOCK</span>
+                        <span class="logo-part industry">INDUSTRY</span>
+                    </a>
+                </div>
+                <div class="copyright">
+                    &copy; 2023 OLA OBI BLOCK INDUSTRY. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        let cart = [];
+        
+        // Mobile menu toggle
+        $('.mobile-menu-btn').click(function() {
+            $('#mobileDropdown').toggleClass('active');
+        });
+        
+        // Close mobile menu when clicking outside
+        $(document).click(function(e) {
+            if (!$(e.target).closest('.mobile-menu-btn, .mobile-dropdown').length) {
+                $('#mobileDropdown').removeClass('active');
+            }
+        });
+        
+        // Smooth scrolling for navigation links
+        $('nav a, .mobile-dropdown a').on('click', function(e) {
+            if (this.hash !== '') {
+                e.preventDefault();
+                const hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top - 70
+                }, 800);
+                // Close mobile menu after clicking a link
+                $('#mobileDropdown').removeClass('active');
+            }
+        });
+        
+        // Quantity controls
+        $('.quantity-btn').on('click', function() {
+            const productId = $(this).data('product');
+            const input = $(`#quantity-${productId}`);
+            let value = parseInt(input.val());
+            
+            if ($(this).hasClass('plus')) {
+                value++;
+            } else if ($(this).hasClass('minus') && value > 1) {
+                value--;
+            }
+            
+            input.val(value);
+        });
+        
+        // Add to cart
+        $('.btn-add-to-cart').on('click', function() {
+            const productId = $(this).data('product');
+            const productName = $(this).data('name');
+            const productPrice = parseInt($(this).data('price'));
+            const quantity = parseInt($(`#quantity-${productId}`).val());
+            
+            // Check if product already in cart
+            const existingItem = cart.find(item => item.id === productId);
+            
+            if (existingItem) {
+                existingItem.quantity += quantity;
+            } else {
+                cart.push({
+                    id: productId,
+                    name: productName,
+                    price: productPrice,
+                    quantity: quantity
+                });
+            }
+            
+            updateCart();
+            
+            // Reset quantity
+            $(`#quantity-${productId}`).val(1);
+            
+            // Add visual feedback
+            const button = $(this);
+            const originalText = button.html();
+            button.html('<i class="fas fa-check"></i> Added!');
+            button.css('background-color', '#2ecc71');
+            
+            setTimeout(() => {
+                button.html(originalText);
+                button.css('background-color', '');
+            }, 1500);
+        });
+        
+        // Update cart display
+        function updateCart() {
+            const cartItems = $('#cart-items');
+            const checkoutBtn = $('#checkout-btn');
+            
+            if (cart.length === 0) {
+                cartItems.html(`
+                    <div class="empty-cart-state">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p>Your cart is empty</p>
+                    </div>
+                `);
+                checkoutBtn.prop('disabled', true);
+            } else {
+                let html = '';
+                let total = 0;
+                
+                cart.forEach(item => {
+                    const itemTotal = item.price * item.quantity;
+                    total += itemTotal;
+                    
+                    html += `
+                        <div class="cart-item">
+                            <div class="item-details">
+                                <h6>${item.name}</h6>
+                                <small>₦${item.price.toLocaleString()} × ${item.quantity}</small>
+                            </div>
+                            <div>
+                                <span>₦${itemTotal.toLocaleString()}</span>
+                                <button class="remove-item" data-id="${item.id}">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    `;
+                });
+                
+                cartItems.html(html);
+                $('#cart-total').text(`₦${total.toLocaleString()}`);
+                checkoutBtn.prop('disabled', false);
+            }
+            
+            // Add event listeners for remove buttons
+            $('.remove-item').on('click', function() {
+                const id = $(this).data('id');
+                cart = cart.filter(item => item.id !== id);
+                updateCart();
+            });
+        }
+        
+        // Checkout process - FIXED VERSION
+        $('#checkout-btn').on('click', function() {
+            if (cart.length === 0) return;
+            
+            // Prepare order details
+            let orderDetails = "🛒 *NEW ORDER FROM OLA OBI BLOCK INDUSTRY* 🛒\n\n";
+            let total = 0;
+            
+            cart.forEach(item => {
+                const itemTotal = item.price * item.quantity;
+                total += itemTotal;
+                orderDetails += `🏗️ ${item.name}\n`;
+                orderDetails += `   Quantity: ${item.quantity}\n`;
+                orderDetails += `   Price: ₦${item.price.toLocaleString()} each\n`;
+                orderDetails += `   Subtotal: ₦${itemTotal.toLocaleString()}\n\n`;
+            });
+            
+            orderDetails += `💰 *TOTAL AMOUNT: ₦${total.toLocaleString()}* 💰\n\n`;
+            orderDetails += `Please provide your details:\n`;
+            orderDetails += `• Full Name:\n`;
+            orderDetails += `• Delivery Address:\n`;
+            orderDetails += `• Phone Number:\n\n`;
+            orderDetails += `Thank you for choosing OLA OBI BLOCK INDUSTRY! 🏠`;
+            
+            // Encode for WhatsApp URL
+            const encodedMessage = encodeURIComponent(orderDetails);
+            const phoneNumber = "2348152708215"; // Your WhatsApp number
+            
+            // Create WhatsApp URL
+            const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+            
+            // Open WhatsApp in new tab
+            window.open(whatsappURL, '_blank');
+            
+            // Show success message
+            $('#overlay').fadeIn();
+            $('#success-alert').show();
+            
+            // Clear cart after successful order
+            cart = [];
+            updateCart();
+        });
+        
+        // Close success alert
+        $('#close-alert').on('click', function() {
+            $('#overlay').fadeOut();
+            $('#success-alert').hide();
+        });
+        
+        // Contact form submission
+        $('#contactForm').submit(function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            $(this).trigger('reset');
+        });
+
+        // Also update the existing WhatsApp button to include cart items if any
+        $('.fa-whatsapp').closest('a').on('click', function(e) {
+            if (cart.length > 0) {
+                e.preventDefault();
+                
+                let orderDetails = "🛒 *CART ITEMS FROM OLA OBI BLOCK INDUSTRY* 🛒\n\n";
+                let total = 0;
+                
+                cart.forEach(item => {
+                    const itemTotal = item.price * item.quantity;
+                    total += itemTotal;
+                    orderDetails += `🏗️ ${item.name} - ${item.quantity} × ₦${item.price.toLocaleString()} = ₦${itemTotal.toLocaleString()}\n`;
+                });
+                
+                orderDetails += `\n💰 *TOTAL: ₦${total.toLocaleString()}* 💰\n\n`;
+                orderDetails += `I'm interested in these items. Please contact me.`;
+                
+                const encodedMessage = encodeURIComponent(orderDetails);
+                const phoneNumber = "2348152708215";
+                const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+                
+                window.open(whatsappURL, '_blank');
+            }
+        });
+    });
+</script>
+</body>
+</html>
